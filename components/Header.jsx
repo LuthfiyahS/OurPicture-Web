@@ -43,7 +43,7 @@ function Header () {
         <DocumentAddIcon className='text-secondary cursor-pointer' width={25} />
       </Link>
 
-      <div class='relative inline-block text-left'>
+      <div className='relative inline-block text-left'>
         <div
           className='flex items-center gap-2 text-sm font-semibold cursor-pointer'
           onClick={() => setIsLogoutDropdownActive(!isLogoutDropdownActive)}
@@ -62,7 +62,7 @@ function Header () {
 
         {isLogoutDropdownActive &&
           <div
-            class='origin-top-right absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
+            className='origin-top-right absolute right-0 mt-2 w-24 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'
             role='menu'
             aria-orientation='vertical'
             aria-labelledby='menu-button'
