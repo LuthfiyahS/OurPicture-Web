@@ -66,7 +66,7 @@ function Header () {
             role='menu'
             aria-orientation='vertical'
             aria-labelledby='menu-button'
-            tabindex='-1'
+            tabIndex='-1' 
           >
             <div
               className='flex py-2 px-3 space-x-2 items-center text-sm text-red-600 cursor-pointer'

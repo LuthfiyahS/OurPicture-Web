@@ -156,9 +156,10 @@ function CreatePost () {
         {section === 'first'
           ? <div className='m-auto flex flex-col w-full sm:w-[500px] place-content-start p-5 items-center space-y-5'>
             {previewImages.length > 0 &&
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-3 gap-4' >
               {previewImages.map(img =>
                 <Image
+                  key={img.id}
                   className='rounded-lg'
                   src={img}
                   width='150'
@@ -195,7 +196,7 @@ function CreatePost () {
               className='w-full sm:w-[500px]'
               >
               {previewImages.map(img =>
-                <Image src={img} width={500} height={500} />
+                <Image src={img} width={500} height={500} key={img.id}/>
                 )}
             </Carousel>
             <div className='px-5 space-y-5'>

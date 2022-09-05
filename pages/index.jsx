@@ -71,7 +71,7 @@ export default function Home ({ user, posts }) {
       <Header />
       <div className='w-full sm:w-[400px] sm:mt-28 sm:space-y-5'>
         {postData.map(post =>
-          <div className='sm:border sm:rounded-xl bg-white'>
+          <div className='sm:border sm:rounded-xl bg-white' key={post.id}>
             {/* Title */}
             <div className='flex items-center space-x-2 p-5'>
               <Image src={post.user_profile_picture} width={25} height={25} />
@@ -82,7 +82,7 @@ export default function Home ({ user, posts }) {
             {/* Images  */}
             <Carousel showStatus={false}>
               {post.images.map(img =>
-                <Image src={img} width={400} height={400} />
+                <Image src={img} width={400} height={400} key={img.id} />
               )}
             </Carousel>
             {/* Like  */}
